@@ -411,12 +411,10 @@ unordered_map<Point, int, PointHash> point_map;
 
 ---
 
-**参考资料**：
-1. Cormen, T. H., et al. *Introduction to Algorithms*
-2. Meyers, S. *Effective STL*
-3. LeetCode & LintCode 哈希表相关问题
+
 
 **练习题目**：
+
 1. LeetCode 1: 两数之和
 2. LeetCode 49: 字母异位词分组
 3. LeetCode 146: LRU缓存机制
