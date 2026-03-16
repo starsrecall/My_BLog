@@ -40,6 +40,36 @@
 
 [一些关于make的细节](./补充/一些关于make的细节.md)
 
+----
+
+## 展示
+
+**dir**
+
+```powershell
+D:\代码\VS_CODE\src\CS50>dir
+```
+
+
+
+使用后
+
+![image-20260316175239046](./week_1.assets/image-20260316175239046.png)
+
+也可以用**ls**(二者等价)
+
+```powershell
+D:\代码\VS_CODE\src\CS50>ls
+```
+
+
+
+![image-20260316175315923](./week_1.assets/image-20260316175315923.png)
+
+----
+
+
+
 ## 运行
 
 ### **./文件名**
@@ -49,6 +79,32 @@
 ![image-20260316171152314](./week_1.assets/image-20260316171152314.png)
 
 ==./==的本质是访问当前文件夹
+
+
+
+----
+
+## 改变目录
+
+**cd**
+
+```powershell
+ D:\代码\VS_CODE\src> cd .\CS50\
+```
+
+![image-20260316180549446](./week_1.assets/image-20260316180549446.png)
+
+```powershell
+ D:\代码\VS_CODE\src> cd ..
+```
+
+![image-20260316180720564](./week_1.assets/image-20260316180720564.png)
+
+
+
+[关于cd的一些知识](./补充/关于cd的一些知识.md)
+
+----
 
 
 
