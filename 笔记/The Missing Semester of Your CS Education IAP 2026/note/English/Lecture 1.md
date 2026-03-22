@@ -64,14 +64,13 @@ Navigating in the shell
 
 When you launch your terminal, you will see a _prompt_ that often looks a little like this:
 
-```
+```bash
 missing:~$
-
 ```
 
 This is the main textual interface to the shell. It tells you that you are on the machine `missing` and that your “current working directory”, or where you currently are, is `~` (short for “home”). The `$` tells you that you are not the root user (more on that later). At this prompt you can type a _command_, which will then be interpreted by the shell. The most basic command is to execute a program:
 
-```
+```bash
 missing:~$ date
 Fri 10 Jan 2020 11:49:31 AM EST
 missing:~$
@@ -80,10 +79,9 @@ missing:~$
 
 Here, we executed the `date` program, which (perhaps unsurprisingly) prints the current date and time. The shell then asks us for another command to execute. We can also execute a command with _arguments_:
 
-```
+```bash
 missing:~$ echo hello
 hello
-
 ```
 
 In this case, we told the shell to execute the program `echo` with the argument `hello`. The `echo` program simply prints out its arguments. The shell parses the command by splitting it by whitespace, and then runs the program indicated by the first word, supplying each subsequent word as an argument that the program can access. If you want to provide an argument that contains spaces or other special characters (e.g., a directory named “My Photos”), you can either quote the argument with `'` or `"` (`"My Photos"`), or escape just the relevant characters with `\` (`My\ Photos`).
@@ -332,7 +330,7 @@ We have not written solutions for the exercises. If you are stuck on anything in
 17.  `awk` can filter lines based on column values and manipulate output. For example, `awk '$3 ~ /pattern/ {$4=""; print}'` prints only lines where the third column matches `pattern`, while omitting the fourth column. Write an `awk` command that prints only lines where the second column is greater than 100, and swaps the first and third columns. Test with: `printf 'a 50 x\nb 150 y\nc 200 z\n'`
     
 18.  Dissect the SSH log pipeline from the lecture: what does each step do? Then build something similar to find your most-used shell commands from `~/.bash_history` (or `~/.zsh_history`).
-    
+
 
 * * *
 
