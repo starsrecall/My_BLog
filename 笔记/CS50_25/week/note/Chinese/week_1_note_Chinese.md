@@ -2,6 +2,7 @@
 ---
 
 # [第1讲](https://cs50.harvard.edu/x/notes/1/#lecture-1)
+
 - [欢迎](#welcome)
 - [源代码](#source-code)
 - [CS50专属Visual Studio Code](#visual-studio-code-for-cs50)
