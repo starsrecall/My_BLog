@@ -10,7 +10,7 @@
 - 📊 [Mermaid 绘图笔记](笔记/Mermaid/Mermid.md)
 - 🎓 [CS50 2025 课程笔记](./笔记/CS50_25/CS50_25.md)
 - ⚙️ [C++ 学习笔记](./笔记/C++/C++.md)
-- 🚀 [计算机教育中缺失的一课](./笔记/The%20Missing%20Semester%20of%20Your%20CS%20Education%20IAP%202026/The%20Missing%20Semester%20of%20Your%20CS%20Education%20IAP%202026.md)
+- 🚀 [计算机教育中缺失的一课](./笔记/The_Missing_Semester_of_Your_CS_Education/The_Missing_Semester_of_Your_CS_Education.md)
 
 ### 🎁 **分享**
 
