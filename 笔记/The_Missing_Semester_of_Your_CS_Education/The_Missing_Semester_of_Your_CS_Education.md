@@ -2,15 +2,12 @@
 
 ## Lecture 1
 
-- [Lecture_1_shell](./Lecture/Lecture_1_shell.md)
 - [Lecture_1_English](./note/English/Lecture_1.md)
 - [Lecture_1_Chinese](./note/Chinese/Lecture_1.md)
 
 
 
 ## Lecture 2
-
-- [Lecture_2_shell](./Lecture/Lecture_2_shell.md)
 
 - [Lecture_1_English](./note/English/Lecture_2.md)
 - [Lecture_2_Chinese](./note/Chinese/Lecture_2.md)
