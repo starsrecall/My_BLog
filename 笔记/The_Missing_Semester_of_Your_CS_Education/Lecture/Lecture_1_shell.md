@@ -6,19 +6,19 @@
 echo hello world
 ```
 
-![image-20260319191509147](./Lecture 1_shell.assets/image-20260319191509147.png)
+![image-20260319191509147](./Lecture_1_shell.assets/image-20260319191509147.png)
 
 ```shell
 echo hello          world
 ```
 
-![image-20260319191700742](./Lecture 1_shell.assets/image-20260319191700742.png)
+![image-20260319191700742](./Lecture_1_shell.assets/image-20260319191700742.png)
 
 ```shell
 echo "hello world"
 ```
 
-![image-20260319191757210](./Lecture 1_shell.assets/image-20260319191757210.png)
+![image-20260319191757210](./Lecture_1_shell.assets/image-20260319191757210.png)
 
 
 
@@ -28,7 +28,7 @@ echo "hello world"
 echo "hello          world"
 ```
 
-![image-20260319191833431](./Lecture 1_shell.assets/image-20260319191833431.png)
+![image-20260319191833431](./Lecture_1_shell.assets/image-20260319191833431.png)
 
 **还有一份方法是使用“/”来表示它不是一个特殊字符，这个字符串并没有中断**
 
@@ -36,15 +36,15 @@ echo "hello          world"
 
 如果你使用单引号
 
-![image-20260319192942501](./Lecture 1_shell.assets/image-20260319192942501.png)
+![image-20260319192942501](./Lecture_1_shell.assets/image-20260319192942501.png)
 
 这是在提示你还需要输入字符==’==作为结束
 
-![image-20260319193059750](./Lecture 1_shell.assets/image-20260319193059750.png)
+![image-20260319193059750](./Lecture_1_shell.assets/image-20260319193059750.png)
 
 但是使用双引号就不会
 
-![image-20260319193141698](./Lecture 1_shell.assets/image-20260319193141698.png)
+![image-20260319193141698](./Lecture_1_shell.assets/image-20260319193141698.png)
 
 
 
@@ -62,7 +62,7 @@ man echo
 
 然后你就会进入像这样的一个页面。
 
-![image-20260319193528562](./Lecture 1_shell.assets/image-20260319193528562.png)
+![image-20260319193528562](./Lecture_1_shell.assets/image-20260319193528562.png)
 
 
 
@@ -85,23 +85,23 @@ cd xxx      #xxx是路径
 
 仍然在当目录
 
-![image-20260319194840114](./Lecture 1_shell.assets/image-20260319194840114.png)
+![image-20260319194840114](./Lecture_1_shell.assets/image-20260319194840114.png)
 
 ```shell
 cd ..  #返回上一级目录
 ```
 
-![image-20260319195020540](./Lecture 1_shell.assets/image-20260319195020540.png)
+![image-20260319195020540](./Lecture_1_shell.assets/image-20260319195020540.png)
 
 > **记住：所有指令都可以合在一起用**
 
-![image-20260319195258479](./Lecture 1_shell.assets/image-20260319195258479.png)
+![image-20260319195258479](./Lecture_1_shell.assets/image-20260319195258479.png)
 
 ### **Tab**键的妙用
 
 - 按两次，展示所有相关的文件
 
-![image-20260319201400192](./Lecture 1_shell.assets/image-20260319201400192.png)
+![image-20260319201400192](./Lecture_1_shell.assets/image-20260319201400192.png)
 
 ### **which**
 
@@ -113,7 +113,7 @@ cd ..  #返回上一级目录
 which echo
 ```
 
-![image-20260319202801498](./Lecture 1_shell.assets/image-20260319202801498.png)
+![image-20260319202801498](./Lecture_1_shell.assets/image-20260319202801498.png)
 
 **特殊**(找到所有位置)
 
@@ -121,17 +121,17 @@ which echo
 which -a sh
 ```
 
-![image-20260319202942245](./Lecture 1_shell.assets/image-20260319202942245.png)
+![image-20260319202942245](./Lecture_1_shell.assets/image-20260319202942245.png)
 
 which的查找路径顺序
 
-![image-20260319203045151](./Lecture 1_shell.assets/image-20260319203045151.png)
+![image-20260319203045151](./Lecture_1_shell.assets/image-20260319203045151.png)
 
 ### **ls**
 
 展示文件夹内所有的文件
 
-![image-20260319203422999](./Lecture 1_shell.assets/image-20260319203422999.png)
+![image-20260319203422999](./Lecture_1_shell.assets/image-20260319203422999.png)
 
 ### **nvim**
 
@@ -276,13 +276,13 @@ grep A B #查找A(或满足A的东西)在B中
 date > the_date.text
 ```
 
-![image-20260322094001650](./Lecture 1_shell.assets/image-20260322094001650.png)
+![image-20260322094001650](./Lecture_1_shell.assets/image-20260322094001650.png)
 
 
 
 “**>>**”代表重定向输入，它会在原有基础上加入输入内容。
 
-![image-20260322100036696](./Lecture 1_shell.assets/image-20260322100036696.png)
+![image-20260322100036696](./Lecture_1_shell.assets/image-20260322100036696.png)
 
 
 
