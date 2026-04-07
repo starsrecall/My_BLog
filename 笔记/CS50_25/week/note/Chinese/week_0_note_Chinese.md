@@ -513,4 +513,4 @@ Scratch支持同时在屏幕上放置多个角色。我们再添加一个耶鲁�
 以上就是CS50第0讲的全部内容！欢迎加入课程！我们下次课见！
 
 ---
-本文转自 [https://cs50.harvard.edu/x/notes/0/](https://cs50.harvard.edu/x/notes/0/)，如有侵权，请联系删除。
+> 本文转自 [https://cs50.harvard.edu/x/notes/0/](https://cs50.harvard.edu/x/notes/0/)，如有侵权，请联系删除。

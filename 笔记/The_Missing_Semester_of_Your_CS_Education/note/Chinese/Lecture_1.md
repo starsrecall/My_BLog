@@ -235,23 +235,42 @@ echo "完整日志路径：$LOGFILE"
 
 我们没有编写练习的标准答案。如果你在某个问题上卡住了，可以在 [Discord](https://ossu.dev/#community) 的 `#missing-semester-forum` 频道发帖，或者给我们发邮件描述你已经尝试过的步骤，我们会尽力提供帮助。这些练习也很适合作为和大语言模型对话的初始提示，你可以交互式地深入探索相关主题。练习的真正价值在于探索答案的过程，而不是答案本身。我们鼓励你在做练习的过程中顺着兴趣点拓展相关内容，多问“为什么”，而不是只找最快得到答案的路径。
 
-1.  本课程需要使用Bash或ZSH这类Unix Shell。如果你用Linux或macOS，不需要额外配置；如果你用Windows，请确保不要使用cmd.exe或PowerShell，可以安装[适用于Linux的Windows子系统](https://docs.microsoft.com/en-us/windows/wsl/) 或Linux虚拟机来使用Unix风格的命令行工具。可以运行`echo $SHELL`确认当前Shell，如果输出类似`/bin/bash`或`/usr/bin/zsh`就说明环境正确。
-2.  `ls`的`-l`参数有什么作用？运行`ls -l /`查看输出，每一行的前10个字符分别代表什么含义？（提示：`man ls`）
-3.  在命令`find ~/Downloads -type f -name "*.zip" -mtime +30`中，`*.zip`是一个**通配模式（glob）**。什么是通配模式？创建一个测试目录，放入一些文件，尝试使用`ls *.txt`、`ls file?.txt`、`ls {a,b,c}.txt`这类模式，参考Bash手册中的[模式匹配](https://www.gnu.org/software/bash/manual/html_node/Pattern-Matching.html)部分。
-4.  `'单引号'`、`"双引号"`和`$'ANSI引号'`有什么区别？编写一个命令，回显包含字面量`$`、`!`和换行符的字符串。参考[引号规则](https://www.gnu.org/software/bash/manual/html_node/Quoting.html)。
-5.  Shell有三个标准流：标准输入stdin（0）、标准输出stdout（1）、标准错误stderr（2）。运行`ls /nonexistent /tmp`，把stdout重定向到一个文件，stderr重定向到另一个文件。如何把两个流重定向到同一个文件？参考[重定向](https://www.gnu.org/software/bash/manual/html_node/Redirections.html)。
-6.  `$?`保存上一个命令的退出状态（0代表成功，非0代表失败）。`&&`只有前一个命令成功时才会运行后一个命令；`||`只有前一个命令失败时才会运行后一个命令。编写一行命令，仅当`/tmp/mydir`不存在时才创建它。参考[退出状态](https://www.gnu.org/software/bash/manual/html_node/Exit-Status.html)。
-7.  为什么`cd`必须是Shell的内置命令，而不能是独立的程序？（提示：思考子进程能影响、不能影响父进程的哪些属性。）
-8.  编写一个脚本，接收文件名作为参数（`$1`），用`test -f`或`[ -f ... ]`检查文件是否存在，根据是否存在打印不同的提示信息。参考[Bash条件表达式](https://www.gnu.org/software/bash/manual/html_node/Bash-Conditional-Expressions.html)。
-9.  把上一题的脚本保存为`check.sh`，尝试用`./check.sh somefile`运行，会发生什么？运行`chmod +x check.sh`后再试一次，为什么需要这一步？（提示：分别在`chmod`前后运行`ls -l check.sh`查看权限变化。）
+1. 本课程需要使用Bash或ZSH这类Unix Shell。如果你用Linux或macOS，不需要额外配置；如果你用Windows，请确保不要使用cmd.exe或PowerShell，可以安装[适用于Linux的Windows子系统](https://docs.microsoft.com/en-us/windows/wsl/) 或Linux虚拟机来使用Unix风格的命令行工具。可以运行`echo $SHELL`确认当前Shell，如果输出类似`/bin/bash`或`/usr/bin/zsh`就说明环境正确。
+
+2. `ls`的`-l`参数有什么作用？运行`ls -l /`查看输出，每一行的前10个字符分别代表什么含义？（提示：`man ls`）
+
+3. 在命令`find ~/Downloads -type f -name "*.zip" -mtime +30`中，`*.zip`是一个**通配模式（glob）**。什么是通配模式？创建一个测试目录，放入一些文件，尝试使用`ls *.txt`、`ls file?.txt`、`ls {a,b,c}.txt`这类模式，参考Bash手册中的[模式匹配](https://www.gnu.org/software/bash/manual/html_node/Pattern-Matching.html)部分。
+
+   [答案](../../补充/关于ls的一些东西.md)
+
+4. `'单引号'`、`"双引号"`和`$'ANSI引号'`有什么区别？编写一个命令，回显包含字面量`$`、`!`和换行符的字符串。参考[引号规则](https://www.gnu.org/software/bash/manual/html_node/Quoting.html)。
+
+5. Shell有三个标准流：标准输入stdin（0）、标准输出stdout（1）、标准错误stderr（2）。运行`ls /nonexistent /tmp`，把stdout重定向到一个文件，stderr重定向到另一个文件。如何把两个流重定向到同一个文件？参考[重定向](https://www.gnu.org/software/bash/manual/html_node/Redirections.html)。
+
+6. `$?`保存上一个命令的退出状态（0代表成功，非0代表失败）。`&&`只有前一个命令成功时才会运行后一个命令；`||`只有前一个命令失败时才会运行后一个命令。编写一行命令，仅当`/tmp/mydir`不存在时才创建它。参考[退出状态](https://www.gnu.org/software/bash/manual/html_node/Exit-Status.html)。
+
+7. 为什么`cd`必须是Shell的内置命令，而不能是独立的程序？（提示：思考子进程能影响、不能影响父进程的哪些属性。）
+
+8. 编写一个脚本，接收文件名作为参数（`$1`），用`test -f`或`[ -f ... ]`检查文件是否存在，根据是否存在打印不同的提示信息。参考[Bash条件表达式](https://www.gnu.org/software/bash/manual/html_node/Bash-Conditional-Expressions.html)。
+
+9. 把上一题的脚本保存为`check.sh`，尝试用`./check.sh somefile`运行，会发生什么？运行`chmod +x check.sh`后再试一次，为什么需要这一步？（提示：分别在`chmod`前后运行`ls -l check.sh`查看权限变化。）
+
 10. 给脚本的`set`参数加上`-x`会发生什么？写一个简单的脚本测试，观察输出。参考[set内置命令](https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html)。
+
 11. 编写命令，把一个文件复制为带当天日期的备份（比如`notes.txt` → `notes_2026-01-12.txt`）。（提示：`$(date +%Y-%m-%d)`）参考[命令替换](https://www.gnu.org/software/bash/manual/html_node/Command-Substitution.html)。
+
 12. 修改讲座中提到的不稳定测试脚本，让它接收测试命令作为参数，而不是硬编码`cargo test my_test`。（提示：`$1`或`$@`）参考[特殊参数](https://www.gnu.org/software/bash/manual/html_node/Special-Parameters.html)。
+
 13. 用管道命令找出你的家目录中出现次数最多的5个文件扩展名。（提示：组合使用`find`、`grep`/`sed`/`awk`、`sort`、`uniq -c`和`head`。）
+
 14. `xargs`可以把标准输入的行转换成命令参数。结合`find`和`xargs`（不要用`find -exec`），查找目录下所有`.sh`文件，用`wc -l`统计每个文件的行数。进阶：让命令支持带空格的文件名。（提示：`-print0`和`-0`）参考`man xargs`。
+
 15. 用`curl`获取课程官网（`https://missing.csail.mit.edu/`）的HTML，通过管道传给`grep`，统计列出的讲座数量。（提示：找每个讲座都会出现一次的模式；用`curl -s`关闭进度输出。）
+
 16. [`jq`](https://jqlang.github.io/jq/)是处理JSON数据的强大工具。用`curl`获取示例数据`https://microsoftedge.github.io/Demos/json-dummy-data/64KB.json`，用`jq`提取所有`version`字段大于6的用户的姓名。（提示：先通过管道传给`jq .`查看数据结构，再尝试`jq '.[] | select(...) | .name'`）
+
 17. `awk`可以基于列值过滤行、调整输出格式。比如`awk '$3 ~ /pattern/ {$4=""; print}'`会仅打印第三列匹配`pattern`的行，并且省略第四列。编写`awk`命令，仅打印第二列大于100的行，并且交换第一列和第三列。测试数据：`printf 'a 50 x\nb 150 y\nc 200 z\n'`
+
 18. 拆解讲座中的SSH日志管道命令：每一步分别做了什么？然后写一个类似的命令，从`~/.bash_history`（或`~/.zsh_history`）中找出你最常用的Shell命令。
 
 

@@ -1379,3 +1379,7 @@ In this lesson, you learned how to apply the building blocks you learned in Scra
 - How to utilize types and operators and the implications of your choices.
 
 See you next time!
+
+
+
+> 本文转自 [https://cs50.harvard.edu/x/notes/2/](https://cs50.harvard.edu/x/notes/2/)，如有侵权，请联系删除。

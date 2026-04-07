@@ -1130,3 +1130,7 @@ int main(void)
 * 如何选择合适的数据类型和运算符，以及不同选择的潜在影响
 
 下次课见！
+
+
+
+> 本文转自 [https://cs50.harvard.edu/x/notes/0/](https://cs50.harvard.edu/x/notes/0/)，如有侵权，请联系删除。

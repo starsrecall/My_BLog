@@ -95,6 +95,7 @@
 * 上图中，第一种算法的复杂度为 $\mathcal{O}(n)$，也就是「n量级」；第二种的复杂度同样是$\mathcal{O}(n)$，因为大O表示法会忽略常数系数；第三种的复杂度为$\mathcal{O}(\log n)$。
 
 * 算法的效率由时间增长的曲线趋势决定，常见的运行时间量级包括：
+
 	- [ ] $\mathcal{O}(n^2)$
 	
 	- [ ] $\mathcal{O}(n \log n)$
@@ -104,9 +105,10 @@
 	- [ ] $\mathcal{O}(\log n)$
 	
 	- [ ] $\mathcal{O}(1)$
-	
-	  
-	
+
+
+​	  
+​	
 * 上述量级中，$\mathcal{O}(n^2)$的效率最低，$\mathcal{O}(1)$的效率最高。
 
 * 线性搜索的复杂度为$\mathcal{O}(n)$，因为最坏情况下需要遍历全部n个元素才能得到结果。
@@ -525,4 +527,4 @@
 | recursive case | 递归条件 | 递归函数中调用自身的逻辑，每次调用会缩小问题规模，逐步向基线条件靠近。 |
 | merge sort | 归并排序 | 基于递归实现的高效排序算法，采用分治思想将序列拆分排序后合并，复杂度为O(n log n)，是稳定的高效排序算法。 |
 
-本文转自 [https://cs50.harvard.edu/x/notes/3/](https://cs50.harvard.edu/x/notes/3/)，如有侵权，请联系删除。
+> 本文转自 [https://cs50.harvard.edu/x/notes/3/](https://cs50.harvard.edu/x/notes/3/)，如有侵权，请联系删除。

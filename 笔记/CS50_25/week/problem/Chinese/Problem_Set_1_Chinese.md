@@ -5,14 +5,14 @@
 2.  使用GitHub账户登录[cs50.dev](https://cs50.dev/)，进入你的专属「代码空间（codespace）」。
 3.  代码空间加载完成后，关闭所有默认自动打开的「欢迎」标签页。
 4.  在代码空间的终端（terminal）窗口中运行`update50`命令，确保你的代码环境为最新版本；如果弹出提示，点击**立即重建（Rebuild now）**即可。
-5.  完成[Hello, World](https://cs50.harvard.edu/x/psets/1/world/)练习（仅用于熟悉操作，无需提交）。
-6.  提交[《你好，我是》](https://cs50.harvard.edu/x/psets/1/me/)（Hello, It’s Me）作业。
+5.  完成[Hello, World](../../../补充/Hello_World/Hello_World_Chinese.md)练习（仅用于熟悉操作，无需提交）。
+6.  提交[《你好，我是》](../../../补充/It's_me/It's_me_Chinese.md)（Hello, It’s Me）作业。
 7.  二选一提交：
     *   如果你对当周知识点掌握尚不熟练，选择[基础版马里奥](https://cs50.harvard.edu/mario/less/)（Mario）作业
     *   如果你对当周知识点掌握较好，选择[进阶版马里奥](https://cs50.harvard.edu/mario/more/)（Mario）作业
 8.  二选一提交：
     *   如果你对当周知识点掌握尚不熟练，选择[找零](https://cs50.harvard.edu/cash/)（Cash）作业
-    *   如果你对当周知识点掌握较好，选择[信用卡验证](https://cs50.harvard.edu/credit/)（Credit）作业
+    *   如果你对当周知识点掌握较好，选择[信用卡验证](../../../补充/credit/credit_Chinese.md)（Credit）作业
 
 如果你提交了两个版本的马里奥作业，系统将自动取两个分数中的更高值计入成绩。如果你同时提交了找零和信用卡验证作业，同样取两个分数中的更高值计入成绩。
 
