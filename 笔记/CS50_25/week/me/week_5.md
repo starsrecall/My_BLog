@@ -94,6 +94,50 @@ list = temp;
 
 
 
+## 树（tree）
+
+### 二叉搜索树
+
+```c
+typedef struct node{
+    int number;
+    struct node *left;
+    struct node *right;
+} node;
+```
+
+
+
+
+
+### 字典
+
+分桶思想（大变小）
+
+哈希表
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
